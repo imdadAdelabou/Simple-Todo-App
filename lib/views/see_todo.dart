@@ -14,6 +14,9 @@ class SeeTodo extends StatelessWidget {
     List<Todo> todos = context.watch<AppState>().todos;
 
     return Scaffold(
+      appBar: AppBar(
+        title: const Text("Toutes les tâches"),
+      ),
       body: SafeArea(
         child: SingleChildScrollView(
           padding: const EdgeInsets.symmetric(
